@@ -1,0 +1,19 @@
+.navBar{
+   
+    text-align: end;
+    
+    padding: 2% 5% 1% 0;
+    
+    
+}
+
+nav ul li a{
+    color: aquamarine;
+    text-decoration: none;
+    
+}
+
+li{
+    list-style: none;
+    
+}
