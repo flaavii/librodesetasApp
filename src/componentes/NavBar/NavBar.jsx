@@ -9,7 +9,7 @@ function NavBar
         <ul>
             <li>
                 <a href='/'>
-                <h2>Mi Libro</h2>
+               Mi Libro de Cultivo
                 </a>
             </li>
             <li>
@@ -19,10 +19,15 @@ function NavBar
                 <a href='https://www.change.org/p/presidente-alberto-fern%C3%A1ndez-despenalizacion-de-hongos-alucin%C3%B3genos-en-argentina-por-la-salud-mental-y-la-ciencia'>Firmá la Petición!</a>
             </li>
             <li>
-                <CartWidget/>
+            <a href='/'>
+            <CartWidget/>
+                </a>
+               
             </li>
 
         </ul>
+
+        
         
     </nav>
   )
