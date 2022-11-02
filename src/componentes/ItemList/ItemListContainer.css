@@ -1,5 +1,10 @@
 img{
-    width: 40%;
+    width: 30%;
+}
+
+body h1{
+    margin: 1% 0;
+    font-size: 100px;
 }
 
 h3{
@@ -8,4 +13,9 @@ h3{
 
 p{
     color: black;
+}
+
+.card{
+    margin: 2% 20%;
+   
 }

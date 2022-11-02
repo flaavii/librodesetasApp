@@ -7,5 +7,7 @@
   font-size: calc(10px + 2vmin);
 }
 
-
+body {
+  padding: 0 10%;
+}
 
