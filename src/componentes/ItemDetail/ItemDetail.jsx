@@ -13,7 +13,7 @@ function ItemDetail({ seta }) {
 
   return (
     <div className="card-detail">
-      <div className="card-detail_img">
+      <div>
         <img src={seta.img} alt="seta img" />
       </div>
       <div>
