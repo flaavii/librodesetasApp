@@ -1,13 +1,19 @@
+
+
 import "./mybutton.css";
+import React from "react";
 
 function MyButton(props) {
-    console.log(props);
-  
-    return (
-      <button className="button">
-        {props.children}
-      </button>
-    );
-  }
-  
-  export default MyButton;
+
+  return (
+    <button
+      onClick={props.onTouchButton}
+      className="button"
+    >
+      {props.children}
+    </button>
+  );
+}
+
+
+export default MyButton;

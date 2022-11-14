@@ -1,0 +1,29 @@
+
+.btnCount{
+
+font-family: Roboto, sans-serif;
+font-weight: 0;
+font-size: 13px;
+color: #fcfcfc;
+background-color: #7dcc75;
+padding: 4px 20px;
+margin: 2% 32%;
+border: solid #4da69a 1px;
+box-shadow: none;
+border-radius: 50px;
+transition : 1000ms;
+transform: translateY();
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+text-transform: uppercase;
+}
+
+.btnCount:hover{
+    margin: 2% 22%;
+background-color: #fff;
+color: #2a9d8f;
+border: solid 1px #50f0dadb;
+}

@@ -1,5 +1,5 @@
 img{
-    width: 30%;
+    width: 16rem;
 }
 
 body h1{
@@ -11,11 +11,35 @@ h3{
     color: black;
 }
 
+h5 {
+    padding-top: 2%;
+    text-transform: uppercase;
+}
+
 p{
     color: black;
+    margin: 0 10%;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    
+
+    
 }
 
 .card{
-    margin: 2% 20%;
+    margin: 0.5%;
+    padding: 1%;
+ 
+
+
    
+}
+
+.data{
+    text-decoration: dashed;
+    margin: 5% 6% 2%;
 }

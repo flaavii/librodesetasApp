@@ -1,13 +1,32 @@
-.button{
-    display: flex;
-    justify-content: center;
-    background-color: lightsalmon;
-    font-size: 20px;
-    margin: 2% 30% 1% 30%;
-    border-radius: 7px;
-    
-}
 
-.button:hover{
-    background-color: lightgreen;
-}
+.button{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 13px;
+    color: #fcfcfc;
+    background-color: lightsalmon;
+    padding: 4px 20px;
+    margin: 2% 12%;
+    border: solid #4da69a 1px;
+    box-shadow: none;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY();
+   
+   
+    cursor: pointer;
+    text-transform: uppercase;
+    }
+    
+  .button:hover{
+    
+    transition : 1000ms;
+    padding: 4px 40px;
+    
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #070503;
+    border: solid 1px #50f0dadb;
+    }
+    
