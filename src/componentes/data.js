@@ -38,7 +38,7 @@ const seta = [
         key:4,
         img:"/img/thaiKhoSamui.webp",
         title:"Thai Koh Samui",
-        data:"Estas frutas esporas, crecen y colonizan rápidamente. Los hongos no crecen muy alto, pero no llegan a ser muy grueso. Psilocybe Cubensis Koh Samui es muy resistente a los contaminantes y hace una opción excelente para los que empiezan cultivar.",
+        data:"De esporas que crecen y colonizan rápidamente. Los hongos no crecen muy alto, tampoco llegan a ser muy gruesos. Es muy resistente a los contaminantes y hace una opción excelente para los que empiezan cultivar.",
         time:12,
         category:"india",
         stock:10000000,

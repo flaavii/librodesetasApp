@@ -26,7 +26,7 @@ function App() {
         <Route path="/" element={<ItemListContainer/>} />
         <Route path="/category/:idCategory" element={<ItemListContainer/>} />
         <Route path="/detail/:idItem" element={<ItemDetailContainer/>} /> 
-        <Route path="*" element={ <h4>ERROR 404: Esta pagina no existe</h4>} />
+        <Route path="*" element={ <h4 className="h4"><strong>ERROR 404: ESTA PAGINA NO EXISTE</strong></h4>} />
       </Routes>
         
     </div>
