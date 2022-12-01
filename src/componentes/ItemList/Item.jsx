@@ -2,31 +2,29 @@ import React from "react";
 import MyButton from "../MyButton/MyButton";
 import "../ItemList/ItemListContainer.css";
 import { Link } from "react-router-dom";
+import "./item.css";
 
-
-
-
-function Item({img, title, time, id, category }) {
+function Item({img, title, id, category }) {
   const urlDetail = `/detail/${id}`;
  return (
-    <div className="card">
+
+    <div className="item">
       <div>
        <img src={img} alt={title}/>
       </div>
       <div>
         <h3>{title}</h3>
-        <h5>Variedad proveniente de {category}</h5>
-       <p>El tiempo estimado de cosecha es de {time} dias</p>
-        
+        <h6>Variedad proveniente de {category}</h6> 
       </div> 
-<div >
-      <Link  to={urlDetail}>
+<div className="btnVermas" >
+      <Link to={urlDetail}>
         <MyButton className="button" onTouchButton={() => console.log("click")} >
           VER MAS
         </MyButton>
       </Link>  
       </div>  
     </div>
+   
 
 
   );

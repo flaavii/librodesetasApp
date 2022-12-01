@@ -7,30 +7,14 @@ body h1{
     font-size: 100px;
 }
 
-h3{
-    color: black;
-}
 
-h5 {
-    padding-top: 2%;
+h6 {
     text-transform: uppercase;
 }
 
-p{
-    color: black;
-    margin: 0 10%;
+
+.loader {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;   
 }
-
-
-.card{
-    margin: 0.5%;
-    padding: 1%;
-
-   
-}
-
-.data{
-    text-decoration: dashed;
-    margin: 5% 6% 2%;
-}
-

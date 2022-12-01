@@ -1,17 +1,20 @@
-
-import ItemCount from "../ItemCount/ItemCount";
 import "./ItemDetail.css";
+import ItemCount from "../ItemCount/ItemCount";
+import { useContext } from "react";
+import { cartContext } from "../../context/cartContext";
 
 
 function ItemDetail({ seta }) {
-
+  
+  const { addToCart } = useContext(cartContext);
 
   function onAddToCart(count) {
     alert(`Agregaste ${count} items al libro!`);
-  
+    addToCart(seta,count);
   }
 
   return (
+  
     <div className="card-detail">
       <div>
         <img src={seta.img} alt="seta img" />
@@ -28,6 +31,7 @@ function ItemDetail({ seta }) {
       />
    
     </div>
+  
   );
 }
 

@@ -6,6 +6,8 @@ import ItemListContainer from './componentes/ItemList/ItemListContainer';
 import ItemDetailContainer from './componentes/ItemDetail/ItemDetailContainer';
 //Import react-router-dom
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { CartContextProvider } from './context/cartContext';
+import CartView from "./componentes/CartView/CartView"
 
 
 
@@ -16,8 +18,9 @@ function App() {
 
 
   return (
-    <BrowserRouter>
     <div className="App">
+    <CartContextProvider>
+    <BrowserRouter>
       <header className="App-header">
         <NavBar />
       </header>
@@ -26,14 +29,16 @@ function App() {
         <Route path="/" element={<ItemListContainer/>} />
         <Route path="/category/:idCategory" element={<ItemListContainer/>} />
         <Route path="/detail/:idItem" element={<ItemDetailContainer/>} /> 
+        <Route path="/cart" element={<CartView/>} />
         <Route path="*" element={ <h4 className="h4"><strong>ERROR 404: ESTA PAGINA NO EXISTE</strong></h4>} />
       </Routes>
-        
-    </div>
+    
     <footer>
       <NavBar/>
     </footer>
     </BrowserRouter>
+    </CartContextProvider>
+    </div>
   );
 }
 

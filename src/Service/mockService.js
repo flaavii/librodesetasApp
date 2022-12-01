@@ -1,4 +1,3 @@
-/* -------------- BACK-END -------------- */
 import seta from "../componentes/data"
 
 
@@ -7,7 +6,7 @@ function getItems(idCategory) {
     if (idCategory === undefined) {
       setTimeout(() => {
         resolve(seta);
-      }, 1500);
+      }, 1000);
     } else {
       setTimeout(() => {
         let itemsRequested = seta.filter(
