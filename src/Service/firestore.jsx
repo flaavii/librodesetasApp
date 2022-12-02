@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, 
+import { 
+  getFirestore, 
   collection, 
   doc, 
   getDocs, 
@@ -40,8 +41,8 @@ export default async function getItems() {
 }
 
 export async function getItemsOrdered() {
-  const colectionProductsRef = collection(DB, "seta");
-  const q = query(colectionProductsRef, orderBy("index"), limit(10));
+  const colectionSetaRef = collection(DB, "seta");
+  const q = query(colectionSetaRef, orderBy("index"), limit(10));
 
   const documentSnapshot = await getDocs(q);
 
@@ -94,7 +95,7 @@ export async function createOrder(order) {
   return docOrder.id;
 }
 
-async function exportArrayToFirestore() {
+export async function exportArrayToFirestore() {
 const seta = [
   {
       id:1,
@@ -143,10 +144,10 @@ const seta = [
 
 const collectionRef = collection(DB, "seta");
 
-  for (let item of seta) {
-    item.index = item.id;
-    delete item.id;
-    let docOrder = await addDoc(collectionRef, item);
+  for (let seta of seta) {
+    seta.index = seta.id;
+    delete seta.id;
+    let docOrder = await addDoc(collectionRef, seta);
     console.log("Documento creado, id:", docOrder.id);
   }
 }

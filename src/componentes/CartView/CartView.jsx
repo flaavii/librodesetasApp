@@ -1,36 +1,35 @@
 import React, { useContext } from "react";
 import { cartContext } from "../../context/cartContext";
 import MyButton from "../MyButton/MyButton";
-import { createOrder, exportArrayToFirestore } from "../../Service/firestore";
+import { createOrder } from "../../Service/firestore";
 import { useNavigate } from "react-router-dom";
 import "./cartview.css";
+import CartForm from "./CartForm";
+
+
 
 function CartView() {
-  const { cart, removeItem, clear, priceInCart } = useContext(cartContext);
+  const { cart, removeItem } = useContext(cartContext);
   let navigate = useNavigate();
 
   if (cart.length === 0) return (<div>
   <h2>Carrito Vacío</h2>
 </div>);
 
-async function handleCheckout(evt) {
+async function handleCheckout(evt, data) {
   const order = {
-    buyer: {
-      name: "Flavia",
-      email: "flaa.vii@ig.com",
-      phone: "11223344",
-    },
-    items: cart,
-    total: 1,
-    date: new Date(),
+      buyer: data,
+      items: cart,
+      total: 0,
+      date: new Date(),
   };
 
   const orderId = await createOrder(order);
   navigate(`/thankyou/${orderId}`); 
-  
-}
-
-  return (
+     
+  }
+ 
+ return (
     <div className="cart-container">
       <div>
       {cart.map((seta) => (
@@ -47,11 +46,11 @@ async function handleCheckout(evt) {
         </div>
       ))}
       </div>
-      <MyButton onTouchButton={handleCheckout}>
-        Finalizar Compra
-      </MyButton>
-      <MyButton>Vaciar carrito</MyButton>
+      <CartForm onSubmit={handleCheckout} />
+      
+      <MyButton onTouchButton={() => removeItem(cart)}>Vaciar carrito</MyButton>
     </div>
+    
   );
 }
 

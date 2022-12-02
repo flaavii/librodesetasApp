@@ -17,8 +17,6 @@ export function CartContextProvider({ children }) {
       setCart(newCart);
     } else {
       
-
-      //1) agregando una propiedad
       seta.count = count;
       newCart.push(seta);
       setCart(newCart);
@@ -31,9 +29,30 @@ export function CartContextProvider({ children }) {
     return total;
   }
 
+  function priceInCart() {
+    let totalPrice = 0;
+    cart.forEach(
+      (seta) =>
+        (totalPrice = totalPrice + seta.price * seta.cantidad)
+    );
+    return totalPrice;
+  }
+
+  function clear() {
+    /* vaciar el estado */
+  }
+
+  function removeItem() {
+    const newCart = [...cart];
+    newCart.pop();
+    setCart(newCart);
+    
+  }
+
+
   return (
     <cartContext.Provider
-      value={{ cart, addToCart, itemsInCart }}
+      value={{ cart, addToCart, itemsInCart, removeItem,clear,priceInCart }}
     >
       {children}
     </cartContext.Provider>

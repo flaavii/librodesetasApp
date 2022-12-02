@@ -1,15 +1,17 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import "./thankyou.css";
 
 function ThankYou() {
   const idOrder = useParams().idOrder;
 
   return (
-    <div style={{ color: "green" }}>
-      <h1>Gracias por tu compra</h1>
-      <h3>
-        El id de tu compra es: <strong>{idOrder}</strong>
-      </h3>
+    <div className="container">
+      <h2 className="h2">Gracias por iniciar tu Libro de Setas</h2>
+      <h5 className="h5">
+        El id de tu operacion es: <strong>{idOrder}</strong>. No es necesario que lo recuerdes...
+      </h5>
+      <h6>Nos contactaremos pronto a tu email</h6>
     </div>
   );
 }
