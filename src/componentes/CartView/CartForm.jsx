@@ -26,9 +26,9 @@ export default function CartForm(props) {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      {/* Podriamos convertir los inputs en Componentes */}
-      <div style={{ display: "flex", marginBottom: 8 }}>
+    <form className="form" onSubmit={onSubmit}>
+      <p>Ingresa tus datos:</p>
+      <div style={{ marginBottom: 8}}>
         <label htmlFor="name" style={{ width: "100px", marginRight: 4 }}>
           Nombre
         </label>
@@ -67,7 +67,7 @@ export default function CartForm(props) {
         />
       </div>
 
-      <button
+      <button className="button"
         disabled={data.name === "" || data.phone === "" || data.email === ""}
         type="submit"
       >
