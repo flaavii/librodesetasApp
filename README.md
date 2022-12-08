@@ -20,9 +20,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 **Instalación 🔧**
 
 Paso a paso lo que debes hacer para la instalacion del proyecto. 
-- Dentro del directorio del proyecto:
-- Ejectuar lo siguiente (en orden).
-- npm init npm start
+- Dentro del directorio del proyecto ejectuar lo siguiente (en orden). npm init npm start
 - Ejecuta la aplicación en el modo de desarrollo. 
 - Abra http://localhost:3000 para verlo en su navegador.
 
