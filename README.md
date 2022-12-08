@@ -30,7 +30,7 @@ Paso a paso lo que debes hacer para la instalacion del proyecto.
 
 
 
-> Nota: a medida que vaya haciendo cambios la pagina se actualizara sola mientras el comando npm start este en uso (menos si hay algun error). Los errores se pueden ver en la consola o en su navegador.
+> **Nota:** a medida que vaya haciendo cambios la pagina se actualizara sola mientras el comando npm start este en uso (menos si hay algun error). Los errores se pueden ver en la consola o en su navegador.
 
 
 
