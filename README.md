@@ -15,10 +15,13 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 Mira Deployment para conocer como desplegar el proyecto.
 
 **Pre-requisitos 📋**
-Descargue o clone el repositorio en su pc.
+
+- Descargue o clone el repositorio en su pc.
 
 $ git clone **https://github.com/flaavii/librodesetas.jsx.git**
-Instalación 🔧
+
+**Instalación 🔧**
+
 Paso a paso lo que debes hacer para la instalacion del proyecto.
 
 Dentro del directorio del proyecto:
