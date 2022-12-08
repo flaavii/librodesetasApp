@@ -4,15 +4,15 @@
 Es un proyecto de recoleccion de datos de cultivadores de Hongos Psilocibios.
 
 ## Funciones
-> Funcion 1: Listado de variedades en cards con accesibilidad de información del mismo. 
+> Listado de variedades en cards con accesibilidad de información del mismo. 
 
-> Funcion 2: Detalle de la variedad seleccionada. 
+> Detalle de la variedad seleccionada. 
 
-> Funcion 3: Carrito de unidades. 
+> Carrito de unidades. 
 
-> Funcion 4: Formulario de usuario y creacion de Libro de datos. 
+> Formulario de usuario y creacion de Libro de datos. 
 
-> Funcion 5: Integración con Firestore / Firebase de Google.
+> Integración con Firestore / Firebase de Google.
 
 
 ## Utilice:
