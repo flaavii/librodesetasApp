@@ -11,8 +11,7 @@ Funcion 1: Listado de variedades en cards con accesibilidad de información del 
 React JS Firestore Database
 
 ## Comenzando 🚀
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas
-Mira Deployment para conocer como desplegar el proyecto.
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
 
 **Pre-requisitos 📋**
 
