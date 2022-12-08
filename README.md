@@ -14,7 +14,7 @@ React JS Firestore Database
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas
 Mira Deployment para conocer como desplegar el proyecto.
 
-## Pre-requisitos 📋
+**Pre-requisitos 📋**
 Descargue o clone el repositorio en su pc.
 
 $ git clone **https://github.com/flaavii/librodesetas.jsx.git**
