@@ -1,4 +1,4 @@
-##Libro de Setas React App
+#Libro de Setas React App
 
 **¿Qué es Libro de Setas?**
 Es un proyecto de recoleccion de datos de cultivadores de Hongos Pscilocibicos.
