@@ -5,7 +5,6 @@ Es un proyecto de recoleccion de datos de cultivadores de Hongos Psilocibios.
 
 ## Funciones
 Listado de variedades en cards con accesibilidad de información del mismo. 
-
 Detalle de la variedad seleccionada. 
 
 Carrito de unidades. 
