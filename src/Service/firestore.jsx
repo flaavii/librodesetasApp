@@ -95,7 +95,7 @@ export async function createOrder(order) {
   return docOrder.id;
 }
 
-export async function exportArrayToFirestore() {
+/*export async function exportArrayToFirestore() {
 const seta = [
   {
       id:1,
@@ -149,7 +149,7 @@ const collectionRef = collection(DB, "seta");
     delete seta.id;
     let docOrder = await addDoc(collectionRef, seta);
     console.log("Documento creado, id:", docOrder.id);
-  }
-}
+  } 
+}*/
 
 

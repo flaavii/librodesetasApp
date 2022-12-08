@@ -7,6 +7,7 @@ import Loader from "../Loaders/Loader";
 
 
 function ItemListContainer() {
+
   const [seta, setSeta] = useState(null);
   const { idCategory } = useParams();
 

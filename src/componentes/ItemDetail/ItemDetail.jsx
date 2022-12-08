@@ -7,6 +7,7 @@ import MyButton from "../MyButton/MyButton";
 
 
 function ItemDetail({ seta }) {
+  
   const [isInCart, setIsInCart] = useState(false);
   const { addToCart } = useContext(cartContext);
 
@@ -22,9 +23,9 @@ function ItemDetail({ seta }) {
         <img src={seta.img} alt="seta img" />
       </div>
       <div>
-        <h2>{seta.title}</h2>
+        <h2>Variedad {seta.title}</h2>
         <p>{seta.data}</p>
-        <h4>Tiempo estimado de cosecha, {seta.time} dias.</h4>
+        <h4>El tiempo estimado de cosecha, es de {seta.time} dias.</h4>
       </div>
       { isInCart ? (
         <Link to="/cart">
@@ -35,6 +36,7 @@ function ItemDetail({ seta }) {
       <ItemCount 
         onAddToCart={onAddToCart} 
         stock={seta.stock} 
+        
       />
       )}
     </div>

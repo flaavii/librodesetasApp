@@ -1,7 +1,5 @@
-
-  
-  .card-detail{
-  padding: 3% 20%;
+.card-detail{
+padding: 0% 20%;
 background: rgba(255, 255, 255, 0.4);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -14,4 +12,5 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
   div h2{
     margin-top: 5%;
+    font-weight: 550;
   }

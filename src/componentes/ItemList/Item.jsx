@@ -4,7 +4,9 @@ import "../ItemList/ItemListContainer.css";
 import { Link } from "react-router-dom";
 import "./item.css";
 
+
 function Item({img, title, id, category }) {
+
   const urlDetail = `/detail/${id}`;
  return (
 
@@ -18,7 +20,7 @@ function Item({img, title, id, category }) {
       </div> 
 <div className="btnVermas" >
       <Link to={urlDetail}>
-        <MyButton className="button" onTouchButton={() => console.log("click")} >
+        <MyButton className="button" onTouchButton={() => (console.log("iniciando"))} >
           VER MAS
         </MyButton>
       </Link>  

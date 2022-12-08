@@ -1,11 +1,11 @@
 import { useState } from "react";
-import MyButton from "../MyButton/MyButton";
+import "./cartForm.css";
 
 export default function CartForm(props) {
   const [data, setData] = useState({
     name: "",
     email: "",
-    phone: "",
+    pais: "",
   });
 
   function onInputChange(evt) {
@@ -55,23 +55,23 @@ export default function CartForm(props) {
       </div>
 
       <div style={{ display: "flex", marginBottom: 8 }}>
-        <label htmlFor="phone" style={{ width: "100px", marginRight: 4 }}>
-          Teléfono
+        <label htmlFor="pais" style={{ width: "100px", marginRight: 4 }}>
+          País
         </label>
         <input
           required
-          value={data.phone}
-          name="phone"
-          type="phone"
+          value={data.pais}
+          name="pais"
+          type="pais"
           onChange={onInputChange}
         />
       </div>
 
       <button className="button"
-        disabled={data.name === "" || data.phone === "" || data.email === ""}
+        disabled={data.name === "" || data.email === "" || data.pais === ""}
         type="submit"
       >
-        Finalizar Compra
+        Finalizar
       </button>
     </form>
   );

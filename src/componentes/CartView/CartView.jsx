@@ -7,7 +7,6 @@ import "./cartview.css";
 import CartForm from "./CartForm";
 
 
-
 function CartView() {
   const { cart, removeItem } = useContext(cartContext);
   let navigate = useNavigate();
@@ -24,8 +23,10 @@ async function handleCheckout(evt, data) {
       date: new Date(),
   };
 
+  
   const orderId = await createOrder(order);
   navigate(`/thankyou/${orderId}`); 
+ 
      
   }
  
@@ -48,7 +49,6 @@ async function handleCheckout(evt, data) {
       </div>
       <CartForm onSubmit={handleCheckout} />
       
-      <MyButton onTouchButton={() => removeItem(cart)}>Vaciar carrito</MyButton>
     </div>
     
   );

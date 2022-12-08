@@ -38,10 +38,6 @@ export function CartContextProvider({ children }) {
     return totalPrice;
   }
 
-  function clear() {
-    /* vaciar el estado */
-  }
-
   function removeItem() {
     const newCart = [...cart];
     newCart.pop();
@@ -52,7 +48,7 @@ export function CartContextProvider({ children }) {
 
   return (
     <cartContext.Provider
-      value={{ cart, addToCart, itemsInCart, removeItem,clear,priceInCart }}
+      value={{ cart, addToCart, itemsInCart, removeItem, priceInCart }}
     >
       {children}
     </cartContext.Provider>

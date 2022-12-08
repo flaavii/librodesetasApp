@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartContextProvider } from './context/cartContext';
 import CartView from "./componentes/CartView/CartView"
 import ThankYou from "../src/componentes/ThankYou/ThankYou"
-
+import Toastify from './componentes/Toastify/Toastify';
 
 
 function App() {
@@ -22,10 +22,12 @@ function App() {
     <div className="App">
     <CartContextProvider>
     <BrowserRouter>
+           
       <header className="App-header">
         <NavBar />
       </header>
       {titulo}
+      <Toastify/>
       <Routes>
         <Route path="/" element={<ItemListContainer/>} />
         <Route path="/category/:idCategory" element={<ItemListContainer/>} />
@@ -38,10 +40,12 @@ function App() {
     <footer>
       <NavBar/>
     </footer>
+
     </BrowserRouter>
     </CartContextProvider>
     </div>
   );
+
 }
 
 export default App;

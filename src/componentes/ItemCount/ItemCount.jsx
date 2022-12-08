@@ -12,7 +12,7 @@ function ItemCount({ stock, onAddToCart }) {
   function handleSubstract() {
     if (count > 1) setCount(count - 1);
   }
-
+ 
   return (
     <div>
       <div className="btnCount" >
