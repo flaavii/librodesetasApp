@@ -19,7 +19,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 
 **Pre-requisitos 📋**
 
-Descargue o clone el repositorio en su pc. $ git clone **https://github.com/flaavii/librodesetas.jsx.git**
+Descargue o clone el repositorio en su pc. $ git clone **https://github.com/flaavii/proyecto-react-licropaniflavia.git**
 
 **Instalación 🔧**
 
