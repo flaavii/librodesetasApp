@@ -12,7 +12,7 @@ Es un proyecto de recoleccion de datos de cultivadores de Hongos Psilocibios.
 
 
 ## Utilice:
-React JS Firestore Database Toastify
+React JS Firestore Database Bootstrap Toastify
 
 ## Comenzando 🚀
 Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
