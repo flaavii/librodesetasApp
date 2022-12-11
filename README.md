@@ -1,13 +1,13 @@
 # Libro de Setas React App
 
 **¿Qué es Libro de Setas?**
-Es un proyecto de recoleccion de datos de cultivadores de Hongos Psilocibios.
+Es un proyecto en consctucción de recolección de datos de cultivadores de Hongos Psilocibios.
 
 ## Funciones
 - Listado de variedades en cards con accesibilidad de información del mismo. 
 - Detalle de la variedad seleccionada. 
 - Carrito de unidades. 
-- Formulario de usuario y creacion de Libro de datos. 
+- Formulario de usuario y creación de Libro de datos. 
 - Integración con Firestore / Firebase de Google.
 
 
