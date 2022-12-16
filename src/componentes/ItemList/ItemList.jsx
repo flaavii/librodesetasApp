@@ -1,9 +1,10 @@
 import React from "react";
 import Item from "./Item";
+import "bootstrap";
 
 function ItemList({ seta }) {
   return (
-    <div className="card">
+    <div className="card d-flex flex-row justify-content-around">
       {seta.map((seta) => {
         return (
           <Item

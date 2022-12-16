@@ -7,7 +7,7 @@ import "./toastify.css";
 function Toastify( text , duration ){
     const notify = ( onClic ) => toast(
 
-      text= "Este es un espacio en construccion para recolectar datos aportados por cultivadores de Setas Pscilocibicas",
+      text= "Este es un espacio en construccion para recolectar datos aportados por cultivadores de Setas Psilocibias",
       duration= 5000,
       
     )

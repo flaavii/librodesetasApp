@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css' ;
 //Import de componentes
 import NavBar from './componentes/NavBar/NavBar';
 import ItemListContainer from './componentes/ItemList/ItemListContainer';
@@ -10,6 +11,7 @@ import { CartContextProvider } from './context/cartContext';
 import CartView from "./componentes/CartView/CartView"
 import ThankYou from "../src/componentes/ThankYou/ThankYou"
 import Toastify from './componentes/Toastify/Toastify';
+
 
 
 function App() {

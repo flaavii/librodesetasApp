@@ -19,15 +19,12 @@ async function handleCheckout(evt, data) {
   const order = {
       buyer: data,
       items: cart,
-      total: 0,
       date: new Date(),
   };
 
   
   const orderId = await createOrder(order);
   navigate(`/thankyou/${orderId}`); 
- 
-     
   }
  
  return (
@@ -42,7 +39,7 @@ async function handleCheckout(evt, data) {
           <h6>Libro N. {seta.count}</h6>
           </div>
           <MyButton onTouchButton={() => removeItem(seta.id)}>
-            X
+             X 
           </MyButton>
         </div>
       ))}

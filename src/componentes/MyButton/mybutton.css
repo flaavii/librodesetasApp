@@ -13,17 +13,13 @@
     border-radius: 50px;
     transition : 1000ms;
     transform: translateY();
-   
-   
     cursor: pointer;
     text-transform: uppercase;
     }
     
   .button:hover{
     
-    transition : 1000ms;
     padding: 4px 40px;
-    
     transform : translateY(-0px);
     background-color: #fff;
     color: #070503;
