@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./cartForm.css";
+import { Form } from "react-bootstrap";
 
 export default function CartForm(props) {
   const [data, setData] = useState({
@@ -25,53 +26,59 @@ export default function CartForm(props) {
   }
 
   return (
-    <form className="form" onSubmit={onSubmit}>
-      <p>Ingresa tus datos:</p>
-      <div style={{ marginBottom: 8}}>
-        <label htmlFor="name" style={{ width: "100px", marginRight: 4 }}>
-          Nombre
-        </label>
-        <input
+    <Form className="form" onSubmit={onSubmit}>
+      <p className="mt-3">Ingresa tus datos:</p>
+
+<div className="d-flex flex-row">
+
+      <Form.Group className="mx-3" >
+
+        <Form.Label htmlFor="name">Nombre</Form.Label>
+        
+        <Form.Control  
           required
           value={data.name}
           name="name"
           type="text"
-          onChange={onInputChange}
-        />
-      </div>
+          onChange={onInputChange} />
 
-      <div style={{ display: "flex", marginBottom: 8 }}>
-        <label htmlFor="email" style={{ width: "100px", marginRight: 4 }}>
-          Email
-        </label>
-        <input
+      </Form.Group>
+      
+
+      <Form.Group className="mx-3">
+
+        <Form.Label htmlFor="email">Email</Form.Label>
+        
+        <Form.Control 
           required
           value={data.email}
           name="email"
           type="email"
-          onChange={onInputChange}
-        />
-      </div>
+          onChange={onInputChange} />
+        
+      </Form.Group>
 
-      <div style={{ display: "flex", marginBottom: 8 }}>
-        <label htmlFor="pais" style={{ width: "100px", marginRight: 4 }}>
-          País
-        </label>
-        <input
+      <Form.Group className="mx-3" >
+
+        <Form.Label htmlFor="pais">Pais</Form.Label>
+        
+        <Form.Control 
           required
           value={data.pais}
           name="pais"
           type="pais"
-          onChange={onInputChange}
-        />
-      </div>
+          onChange={onInputChange} />
+        
+      </Form.Group>
+      </div>     
 
-      <button className="button"
+      <button className="button m5-3"
         disabled={data.name === "" || data.email === "" || data.pais === ""}
         type="submit"
       >
         Finalizar
       </button>
-    </form>
+    </Form>
   );
+
 }
