@@ -12,7 +12,7 @@ function CartView() {
   let navigate = useNavigate();
 
   if (cart.length === 0) return (<div>
-  <h2>Carrito Vacío</h2>
+  <h2>Libro Vacío</h2>
 </div>);
 
 async function handleCheckout(evt, data) {
