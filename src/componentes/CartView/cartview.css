@@ -47,3 +47,15 @@ form p {
   
 }
 
+.svg-icon {
+  width: 2em;
+  
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: black;
+}
+
+

@@ -7,6 +7,7 @@ import MyButton from "../MyButton/MyButton";
 import Accordion from 'react-bootstrap/Accordion';
 
 
+
 function ItemDetail({ seta }) {
   
   const [isInCart, setIsInCart] = useState(false);
@@ -24,7 +25,7 @@ function ItemDetail({ seta }) {
         <img src={seta.img} alt="seta img" />
      
         <Accordion className="my-5">
-      <Accordion.Item eventKey="0" >
+      <Accordion.Item  eventKey="0" >
         <Accordion.Header>
           <h3>Variedad: {seta.title}</h3>
         </Accordion.Header>
