@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import "./toastify.css";
  
 
-function Toastify( text , duration ){
+function Toastify( text , duration){
     const notify = ( onClic ) => toast(
 
       text= "Este es un espacio en construccion para recolectar datos aportados por cultivadores de Setas Psilocibias",
