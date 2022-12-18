@@ -1,0 +1,28 @@
+
+.button{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 13px;
+    color: rgb(15, 106, 106);
+    background-color: lightsalmon;
+    padding: 4px 20px;
+    margin: 2% 12%;
+    border: solid #4da69a 1px;
+    box-shadow: none;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY();
+    cursor: pointer;
+    text-transform: uppercase;
+    }
+    
+  .button:hover{
+    
+    padding: 4px 40px;
+    transform : translateY(-0px);
+    background-color: #fff;
+    color: #070503;
+    border: solid 1px #50f0dadb;
+    }
+    
