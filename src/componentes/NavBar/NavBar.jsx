@@ -9,7 +9,7 @@ function NavBar() {
         <ul>
             <li>
             <Link to="/">
-            Libros Disponibles
+            HOME
           </Link>
             </li>
             <li>
